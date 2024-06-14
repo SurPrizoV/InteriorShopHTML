@@ -1,0 +1,13 @@
+@mixin price($_color, $_text-decoration) {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: 0;
+    color: $_color;
+    text-decoration: $_text-decoration;
+  }
+
+  @mixin respondTo ($_minWidth) {
+    @media (min-width: $_minWidth) {
+        @content
+    }
+  }
